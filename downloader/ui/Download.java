@@ -1,4 +1,4 @@
-package ui;
+package downloader.ui;
 
 import downloader.fc.Downloader;
 import javafx.application.Platform;
