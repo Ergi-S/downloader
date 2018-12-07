@@ -1,16 +1,15 @@
 package downloader.fc;
 
-import java.net.URL;
-import java.net.URLConnection;
-import java.net.MalformedURLException;
-
-import java.io.File;
 import java.io.BufferedInputStream;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 
-import javafx.beans.property.ReadOnlyDoubleWrapper;
 import javafx.beans.property.ReadOnlyDoubleProperty;
+import javafx.beans.property.ReadOnlyDoubleWrapper;
 
 /* creer un thread est facile. Implemnts runnable et a une methode run.
  * il suffit de faire
@@ -18,7 +17,7 @@ import javafx.beans.property.ReadOnlyDoubleProperty;
  * t.start // lance le thread
  */
 
-public class Downloader implements Runnable {
+public class Downloader implements Runnable{
 	public static final int CHUNK_SIZE = 1024;
 
 	URL url;
